@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Digão Restaurante - Painel Operacional",
+  "description": "Painel operacional e de gestão do Digão Restaurante, incluindo controle de pedidos, cozinha (KDS), salão, estoque, financeiro e configurações.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

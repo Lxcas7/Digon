@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-sora: "Sora", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-yellow: #facc15;
+  --color-brand-yellow-dark: #eab308;
+  --color-brand-black: #fafafa;
+  --color-brand-charcoal: #ffffff;
+  --color-brand-light-charcoal: #e4e4e7;
+}
+
+/* Custom scrollbar optimized for Clean Minimalism light mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #ca8a04;
+  outline-offset: -1px;
+}
+
+/* HIGH-CONTRAST LIGHT MODE CONTRAST OVERRIDES */
+main, #login-container {
+  background-color: #fafafa !important;
+  color: #18181b !important;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6,
+#login-container h1, #login-container h2, #login-container h3 {
+  color: #18181b !important;
+}
+
+/* Convert white and light grey text classes into dark grey to guarantee excellent contrast in content pane */
+main .text-white, #login-container .text-white {
+  color: #18181b !important;
+}
+
+main .text-gray-100, #login-container .text-gray-100 {
+  color: #18181b !important;
+}
+
+main .text-gray-200, #login-container .text-gray-200 {
+  color: #27272a !important;
+}
+
+main .text-gray-300, #login-container .text-gray-300 {
+  color: #3f3f46 !important;
+}
+
+main .text-gray-400, #login-container .text-gray-400 {
+  color: #52525b !important;
+}
+
+main .text-gray-500, #login-container .text-gray-500 {
+  color: #71717a !important;
+}
+
+main .text-zinc-100, main .text-zinc-200, main .text-zinc-300 {
+  color: #18181b !important;
+}
+
+main .text-zinc-400 {
+  color: #52525b !important;
+}
+
+/* Override background colors of containers to crisp clean white cards & borders */
+main .bg-brand-charcoal, #login-container .bg-brand-charcoal {
+  background-color: #ffffff !important;
+  border-color: #e4e4e7 !important;
+}
+
+main .border-brand-light-charcoal, #login-container .border-brand-light-charcoal {
+  border-color: #e4e4e7 !important;
+}
+
+main .bg-brand-light-charcoal, #login-container .bg-brand-light-charcoal {
+  background-color: #f4f4f5 !important;
+  border-color: #e4e4e7 !important;
+}
+
+main .bg-brand-light-charcoal\/50, #login-container .bg-brand-light-charcoal\/50 {
+  background-color: #fafafa !important;
+  border-color: #e4e4e7 !important;
+}
+
+main .bg-brand-light-charcoal\/40, #login-container .bg-brand-light-charcoal\/40 {
+  background-color: #f4f4f5 !important;
+  border-color: #e4e4e7 !important;
+}
+
+main .bg-brand-light-charcoal\/30, #login-container .bg-brand-light-charcoal\/30 {
+  background-color: #fafafa !important;
+}
+
+main .bg-brand-light-charcoal\/20, #login-container .bg-brand-light-charcoal\/20 {
+  background-color: #f4f4f5 !important;
+}
+
+main .bg-brand-black\/20, main .bg-brand-black\/25, main .bg-brand-black\/40, main .bg-brand-black\/50,
+#login-container .bg-brand-black\/20, #login-container .bg-brand-black\/40, #login-container .bg-brand-black\/50 {
+  background-color: #f4f4f5 !important;
+  border-color: #e4e4e7 !important;
+}
+
+main .divide-brand-light-charcoal\/50, #login-container .divide-brand-light-charcoal\/50 {
+  border-color: #e4e4e7 !important;
+}
+
+main .divide-brand-light-charcoal, #login-container .divide-brand-light-charcoal {
+  border-color: #e4e4e7 !important;
+}
+
+/* Form controls reset to clean white dropdowns and textboxes */
+main input, main select, main textarea,
+#login-container input, #login-container select, #login-container textarea {
+  background-color: #ffffff !important;
+  color: #18181b !important;
+  border-color: #e4e4e7 !important;
+  border-width: 1px !important;
+}
+
+main input::placeholder, main textarea::placeholder,
+#login-container input::placeholder, #login-container textarea::placeholder {
+  color: #a1a1aa !important;
+}
+
+/* Refined color highlights inside the workspace - yellows become rich, safe ambers on light bg */
+main .text-brand-yellow, #login-container .text-brand-yellow {
+  color: #d97706 !important; /* Amber-600 */
+}
+
+main .bg-brand-yellow\/10 {
+  background-color: #fef3c7 !important; /* amber-100 */
+}
+
+main .bg-brand-yellow\/20 {
+  background-color: #fde68a !important; /* amber-200 */
+}
+
+main .bg-emerald-500\/10 {
+  background-color: #dcfce7 !important; /* green-100 */
+}
+
+main .bg-red-500\/10, main .bg-red-400\/10 {
+  background-color: #fee2e2 !important; /* red-100 */
+}
+
+main .bg-blue-500\/10 {
+  background-color: #dbeafe !important; /* blue-100 */
+}
+
+main .bg-orange-500\/10 {
+  background-color: #ffedd5 !important; /* orange-100 */
+}
+
+main .bg-purple-500\/10 {
+  background-color: #f3e8ff !important; /* purple-100 */
+}
+
+/* Table rows styling */
+main tr.hover\:bg-brand-light-charcoal\/30:hover {
+  background-color: #f4f4f5 !important;
+}
+
+main table tr {
+  background-color: #ffffff !important;
+}
+
+main tbody tr {
+  border-bottom: 1px solid #e4e4e7 !important;
+}
+
+main table thead tr, main thead tr {
+  background-color: #f4f4f5 !important;
+}
+
